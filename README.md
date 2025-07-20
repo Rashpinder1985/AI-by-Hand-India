@@ -53,18 +53,17 @@ yarn dev
 ## 📁 Project Structure
 
 ```
-ai-by-hand-india/
-├── css/
-│   ├── tailwind.css        # Tailwind source file
-│   └── main.css            # Compiled CSS (generated)
-├── pages/
-│   └── landing_page.html   # Main content page
-├── index.html              # Entry file that redirects to landing page
-├── public/                 # Favicon, manifest, and static files
+AI-by-Hand-India/
+├── index.html              # Redirects to landing_page.html
+├── landing_page.html       # Main content page
+├── main.css                # Compiled Tailwind CSS
+├── tailwind.css            # Tailwind source file
 ├── package.json            # Project dependencies and scripts
-├── tailwind.config.js      # Tailwind configuration
-└── CNAME                   # (Optional) For custom domain
-```
+├── tailwind.config.js      # Tailwind CSS configuration
+├── Tom.png                 # Image of Prof. Tom Yeh
+├── Rashpinder.png          # Image of Dr. Rashpinder Kaur
+└── README.md               # Project documentation
+
 
 ---
 
@@ -102,7 +101,7 @@ To generate the final production-ready CSS:
 npm run build:css
 ```
 
-This will create an optimized `main.css` in the `/css` folder.
+This will create an optimized `main.css` .
 
 ---
 
@@ -120,7 +119,7 @@ git push origin main
    - Choose `main` branch and root (`/`) folder
    - Your site will be published at:
      ```
-     https://yourusername.github.io/ai-by-hand-india/
+     https://rashpinder1985.github.io/AI-by-Hand-India/
      ```
 
 3. (Optional) Add a custom domain by creating a `CNAME` file with your domain name.
