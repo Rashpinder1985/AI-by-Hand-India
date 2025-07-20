@@ -1,7 +1,9 @@
-# AI-by-Hand-India
-# HTML
+# AI by Hand India 🌐
 
-A modern HTML project utilizing Tailwind CSS for building responsive web applications with minimal setup.
+A modern HTML project utilizing Tailwind CSS for building responsive web applications with minimal setup.  
+**Now hosted on [GitHub Pages](https://yourusername.github.io/ai-by-hand-india/)**
+
+---
 
 ## 🚀 Features
 
@@ -10,74 +12,135 @@ A modern HTML project utilizing Tailwind CSS for building responsive web applica
 - **Custom Components** - Pre-built component classes for buttons and containers
 - **NPM Scripts** - Easy-to-use commands for development and building
 - **Responsive Design** - Mobile-first approach for all screen sizes
+- **GitHub Pages Deployment** - Host your site for free with version control
+
+---
 
 ## 📋 Prerequisites
 
 - Node.js (v12.x or higher)
 - npm or yarn
+- Git (for deployment)
+
+---
 
 ## 🛠️ Installation
 
-1. Install dependencies:
+1. Clone the repo:
+```bash
+git clone https://github.com/yourusername/ai-by-hand-india.git
+cd ai-by-hand-india
+```
+
+2. Install dependencies:
 ```bash
 npm install
 # or
 yarn install
 ```
 
-2. Start the development server:
+3. Start the development server (if configured):
 ```bash
 npm run dev
 # or
 yarn dev
 ```
 
+---
+
 ## 📁 Project Structure
 
 ```
-html_app/
+ai-by-hand-india/
 ├── css/
-│   ├── tailwind.css   # Tailwind source file with custom utilities
-│   └── main.css       # Compiled CSS (generated)
-├── pages/             # HTML pages
-├── index.html         # Main entry point
-├── package.json       # Project dependencies and scripts
-└── tailwind.config.js # Tailwind CSS configuration
+│   ├── tailwind.css        # Tailwind source file
+│   └── main.css            # Compiled CSS (generated)
+├── pages/
+│   └── landing_page.html   # Main content page
+├── index.html              # Entry file that redirects to landing page
+├── public/                 # Favicon, manifest, and static files
+├── package.json            # Project dependencies and scripts
+├── tailwind.config.js      # Tailwind configuration
+└── CNAME                   # (Optional) For custom domain
 ```
+
+---
 
 ## 🎨 Styling
 
-This project uses Tailwind CSS for styling. Custom utility classes include:
+This project uses Tailwind CSS for styling. You can modify styles by editing `tailwind.css` or customizing utility classes directly in your HTML.
 
+---
 
 ## 🧩 Customization
 
-To customize the Tailwind configuration, edit the `tailwind.config.js` file:
+To customize Tailwind's design system, edit:
 
+```js
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#1E3A8A',
+      },
+    },
+  },
+  content: ["./index.html", "./pages/**/*.{html,js}"],
+}
+```
+
+---
 
 ## 📦 Build for Production
 
-Build the CSS for production:
+To generate the final production-ready CSS:
 
 ```bash
 npm run build:css
-# or
-yarn build:css
 ```
+
+This will create an optimized `main.css` in the `/css` folder.
+
+---
+
+## 🚀 Deploy to GitHub Pages
+
+1. Commit all changes and push to your GitHub repo:
+```bash
+git add .
+git commit -m "Deploy ready"
+git push origin main
+```
+
+2. On GitHub:
+   - Go to **Settings** → **Pages**
+   - Choose `main` branch and root (`/`) folder
+   - Your site will be published at:
+     ```
+     https://yourusername.github.io/ai-by-hand-india/
+     ```
+
+3. (Optional) Add a custom domain by creating a `CNAME` file with your domain name.
+
+---
 
 ## 📱 Responsive Design
 
-The app is built with responsive design using Tailwind CSS breakpoints:
+Built using Tailwind's mobile-first approach with these breakpoints:
 
-- `sm`: 640px and up
-- `md`: 768px and up
-- `lg`: 1024px and up
-- `xl`: 1280px and up
-- `2xl`: 1536px and up
+- `sm`: 640px
+- `md`: 768px
+- `lg`: 1024px
+- `xl`: 1280px
+- `2xl`: 1536px
+
+---
 
 ## 🙏 Acknowledgments
 
 - Built with [Rocket.new](https://rocket.new)
-- Powered by HTML and Tailwind CSS
+- Powered by [GitHub Pages](https://pages.github.com)
+- Styled with [Tailwind CSS](https://tailwindcss.com)
 
-Built with ❤️ on Rocket.new
+Built with ❤️ by AI by Hand India.
