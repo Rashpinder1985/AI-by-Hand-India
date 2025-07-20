@@ -28,7 +28,8 @@ A modern HTML project utilizing Tailwind CSS for building responsive web applica
 
 1. Clone the repo:
 ```bash
-git clone https://github.com/yourusername/ai-by-hand-india.git
+git clone https://github.com/Rashpinder1985/AI-by-Hand-India.git
+
 
 cd ai-by-hand-india
 ```
