@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors - Academic Blue */
+  --color-primary: #1e3a8a; /* blue-800 */
+  --color-primary-light: #3b82f6; /* blue-500 */
+  
+  /* Accent Colors */
+  --color-accent: #f97316; /* orange-500 */
+  
+  /* Background Colors */
+  --color-background: #ffffff; /* white */
+  --color-surface: #f8fafc; /* slate-50 */
+  
+  /* Text Colors */
+  --color-text-primary: #1f2937; /* gray-800 */
+  --color-text-secondary: #6b7280; /* gray-500 */
+  
+  /* Status Colors */
+  --color-success: #10b981; /* emerald-500 */
+  --color-warning: #f59e0b; /* amber-500 */
+  --color-error: #ef4444; /* red-500 */
+  
+  /* Border Colors */
+  --color-border: #e5e7eb; /* gray-200 */
+  --color-border-focus: #f97316; /* orange-500 */
+}
+
+@layer base {
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: var(--color-text-primary);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent text-white font-inter font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 ease-in-out;
+    background-color: var(--color-accent);
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-border-focus);
+  }
+  
+  .card-testimonial {
+    @apply bg-white rounded-lg p-6 shadow-sm border border-gray-100;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-elevated {
+    @apply bg-white rounded-lg p-6;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-input {
+    @apply border border-gray-200 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200;
+  }
+  
+  .text-accent-quote {
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+  }
+  
+  .text-accent-quote-bold {
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: all 200ms ease-in-out;
+  }
+  
+  .transition-form {
+    transition: all 300ms ease-in-out;
+  }
+  
+  .shadow-cta {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shadow-testimonial {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+}
