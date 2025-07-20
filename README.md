@@ -1,7 +1,7 @@
 # AI by Hand India 🌐
 
 A modern HTML project utilizing Tailwind CSS for building responsive web applications with minimal setup.  
-**Now hosted on [GitHub Pages](https://yourusername.github.io/ai-by-hand-india/)**
+**Now hosted on [GitHub Pages](https://rashpinder1985.github.io/AI-by-Hand-India/)**
 
 ---
 
@@ -29,6 +29,7 @@ A modern HTML project utilizing Tailwind CSS for building responsive web applica
 1. Clone the repo:
 ```bash
 git clone https://github.com/yourusername/ai-by-hand-india.git
+
 cd ai-by-hand-india
 ```
 
