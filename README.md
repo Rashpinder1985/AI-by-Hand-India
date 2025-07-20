@@ -7,141 +7,102 @@ A modern HTML project utilizing Tailwind CSS for building responsive web applica
 
 ## 🚀 Features
 
-- **HTML5** - Modern HTML structure with best practices
-- **Tailwind CSS** - Utility-first CSS framework for rapid UI development
-- **Custom Components** - Pre-built component classes for buttons and containers
-- **NPM Scripts** - Easy-to-use commands for development and building
-- **Responsive Design** - Mobile-first approach for all screen sizes
-- **GitHub Pages Deployment** - Host your site for free with version control
+- **HTML5** - Modern HTML structure with best practices  
+- **Tailwind CSS** - Utility-first CSS framework for rapid UI development  
+- **Precompiled CSS** - No build step or dependencies required  
+- **Responsive Design** - Mobile-first approach for all screen sizes  
+- **Live Demo** - Hosted via GitHub Pages  
+
+### 🔗 Quick Links
+- 📄 [Register for the Workshop](https://forms.gle/quQp6JJJvmf1FVhZA)  
+- 🧠 [Workshop Info Page](https://byhand.ai/workshop)  
+- 📥 [Download Excel “By Hand” Worksheets](https://github.com/ImagineAILab/ai-by-hand-excel)
 
 ---
 
-## 📋 Prerequisites
-
-- Node.js (v12.x or higher)
-- npm or yarn
-- Git (for deployment)
-
----
-
-## 🛠️ Installation
-
-1. Clone the repo:
-```bash
-git clone https://github.com/Rashpinder1985/AI-by-Hand-India.git
-
-
-cd ai-by-hand-india
-```
-
-2. Install dependencies:
-```bash
-npm install
-# or
-yarn install
-```
-
-3. Start the development server (if configured):
-```bash
-npm run dev
-# or
-yarn dev
-```
-
----
-
-## 📁 Project Structure
+## 📁 File Structure
 
 ```
 AI-by-Hand-India/
 ├── index.html              # Redirects to landing_page.html
 ├── landing_page.html       # Main content page
-├── main.css                # Compiled Tailwind CSS
-├── tailwind.css            # Tailwind source file
-├── package.json            # Project dependencies and scripts
-├── tailwind.config.js      # Tailwind CSS configuration
+├── main.css                # Precompiled Tailwind CSS (no build needed)
+├── tailwind.css            # Tailwind source file (if rebuilding)
+├── tailwind.config.js      # Tailwind CSS config
 ├── Tom.png                 # Image of Prof. Tom Yeh
 ├── Rashpinder.png          # Image of Dr. Rashpinder Kaur
 └── README.md               # Project documentation
-
+```
 
 ---
 
 ## 🎨 Styling
 
-This project uses Tailwind CSS for styling. You can modify styles by editing `tailwind.css` or customizing utility classes directly in your HTML.
+This project uses **Tailwind CSS**, precompiled into `main.css`.
+
+If you're not modifying the design system, you're all set — no need to install or compile anything.
+
+To explore or modify styles:
+- Edit `tailwind.css`  
+- Or use [Tailwind Play](https://play.tailwindcss.com/) for live testing
 
 ---
 
-## 🧩 Customization
-
-To customize Tailwind's design system, edit:
+## 🧩 Optional: Customizing Tailwind (Advanced)
 
 ```js
 // tailwind.config.js
 module.exports = {
+  content: ["./landing_page.html", "./index.html"],
   theme: {
     extend: {
       colors: {
-        primary: '#1E3A8A',
+        primary: '#1e3a8a',
+        accent: '#f97316',
+      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        'open-sans': ['Open Sans', 'sans-serif'],
+        crimson: ['Crimson Text', 'serif'],
       },
     },
   },
-  content: ["./index.html", "./pages/**/*.{html,js}"],
-}
+  plugins: [],
+};
 ```
 
 ---
 
-## 📦 Build for Production
+## 📦 Optional: Build Tailwind CSS
 
-To generate the final production-ready CSS:
+Only if you're editing `tailwind.css`, run this to regenerate `main.css`:
 
 ```bash
-npm run build:css
+npm install
+npx tailwindcss -i ./tailwind.css -o ./main.css --minify
 ```
 
-This will create an optimized `main.css`.
+> 💡 If you’re not using npm, **you can skip this step entirely**.
 
 ---
 
-## 🚀 Deploy to GitHub Pages
+## 📱 Responsive Breakpoints
 
-1. Commit all changes and push to your GitHub repo:
-```bash
-git add .
-git commit -m "Deploy ready"
-git push origin main
-```
+Tailwind’s mobile-first breakpoints used:
 
-2. On GitHub:
-   - Go to **Settings** → **Pages**
-   - Choose `main` branch and root (`/`) folder
-   - Your site will be published at:
-     ```
-     https://rashpinder1985.github.io/AI-by-Hand-India/
-     ```
-
-3. (Optional) Add a custom domain by creating a `CNAME` file with your domain name.
-
----
-
-## 📱 Responsive Design
-
-Built using Tailwind's mobile-first approach with these breakpoints:
-
-- `sm`: 640px
-- `md`: 768px
-- `lg`: 1024px
-- `xl`: 1280px
-- `2xl`: 1536px
+- `sm`: 640px  
+- `md`: 768px  
+- `lg`: 1024px  
+- `xl`: 1280px  
+- `2xl`: 1536px  
 
 ---
 
 ## 🙏 Acknowledgments
 
-- Built with [Rocket.new](https://rocket.new)
-- Powered by [GitHub Pages](https://pages.github.com)
-- Styled with [Tailwind CSS](https://tailwindcss.com)
+- Brought to you by [AI by Hand India](https://byhand.ai)  
+- Hosted on [GitHub Pages](https://pages.github.com)  
+- Styled with [Tailwind CSS](https://tailwindcss.com)  
 
-Built with ❤️ by AI by Hand India.
+Built with ❤️ by the Imagine AI Lab.
+
