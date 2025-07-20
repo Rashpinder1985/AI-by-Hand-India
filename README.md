@@ -101,7 +101,7 @@ To generate the final production-ready CSS:
 npm run build:css
 ```
 
-This will create an optimized `main.css` .
+This will create an optimized `main.css`.
 
 ---
 
