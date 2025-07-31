@@ -14,63 +14,58 @@
 <body class="font-open-sans bg-background text-text-primary">
     <!-- Navigation Header -->
  <!-- Navigation Header -->
-<nav class="bg-white shadow-sm border-b border-border-default sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center h-16">
-      
-      <!-- Logo -->
-      <div class="flex items-center">
-        <div class="flex-shrink-0">
-          <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
-            <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-13-5z"/>
-            <path d="M12 14l2 2 6-6" stroke="white" stroke-width="2" fill="none"/>
-          </svg>
+ <nav class="bg-white shadow-sm border-b border-border-default sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+
+        <!-- Logo -->
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+              <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-13-5z"/>
+              <path d="M12 14l2 2 6-6" stroke="white" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
+          <div class="ml-3">
+            <h1 class="text-xl font-inter font-bold text-primary">AI by Hand India</h1>
+          </div>
         </div>
-        <div class="ml-3">
-          <h1 class="text-xl font-inter font-bold text-primary">AI by Hand India</h1>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-8">
+            <a href="#workshops" class="text-text-secondary hover:text-primary transition-smooth">Workshops</a>
+            <a href="#Facilitators" class="text-text-secondary hover:text-primary transition-smooth">Facilitators</a>
+            <a href="#Resources" class="text-text-secondary hover:text-primary transition-smooth">Resources</a>
+            <a href="#Success Stories" class="text-text-secondary hover:text-primary transition-smooth">Success Stories</a>
+            <a href="brochure.html" class="text-text-secondary hover:text-primary transition-smooth">Saturday Workshop Series</a>
+          </div>
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-toggle" class="text-text-secondary hover:text-primary" aria-label="Toggle mobile menu">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
       </div>
 
-      <!-- Desktop Menu -->
-      <div class="hidden md:block">
-        <div class="ml-10 flex items-baseline space-x-8">
-          <a href="#workshops" class="text-text-secondary hover:text-primary transition-smooth">Workshops</a>
-          <a href="#Facilitators" class="text-text-secondary hover:text-primary transition-smooth">Facilitators</a>
-          <a href="#Resources" class="text-text-secondary hover:text-primary transition-smooth">Resources</a>
-          <a href="#Success Stories" class="text-text-secondary hover:text-primary transition-smooth">Success Stories</a>
-          <a href="brochure.html" class="text-text-secondary hover:text-primary transition-smooth">Saturday Workshop Series</a>
-        </div>
-      </div>
-
-      <!-- Mobile Toggle Button -->
-      <div class="md:hidden">
-        <button id="mobile-menu-toggle" class="text-text-secondary hover:text-primary">
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
+      <!-- Mobile Menu (hidden by default) -->
+      <div id="mobile-menu" class="md:hidden hidden fixed top-0 right-0 h-full w-1/2 bg-white shadow-lg mt-0 flex flex-col space-y-2 text-sm max-h-full overflow-y-auto px-4 z-50">
+        <button onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="self-end mt-4 text-text-secondary hover:text-primary" aria-label="Close menu">
+          ✕
         </button>
+        <a href="#workshops" class="text-text-secondary hover:text-primary mt-4">Workshops</a>
+        <a href="#Facilitators" class="text-text-secondary hover:text-primary">Facilitators</a>
+        <a href="#Resources" class="text-text-secondary hover:text-primary">Resources</a>
+        <a href="#Success Stories" class="text-text-secondary hover:text-primary">Success Stories</a>
+        <a href="brochure.html" class="text-text-secondary hover:text-primary">Saturday Workshop Series</a>
       </div>
     </div>
+  </nav>
 
-    <!-- Mobile Menu (hidden by default) -->
-<div id="mobile-menu"
-    <!-- Add this as the first item inside #mobile-menu -->
-<button onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="self-end mt-4 text-text-secondary hover:text-primary">
-  ✕
-</button>
-
-     class="md:hidden hidden fixed top-0 right-0 h-full w-1/2 bg-white shadow-lg mt-0 flex flex-col space-y-2 text-sm max-h-full overflow-y-auto px-4 z-50">
-  <a href="#workshops" class="text-text-secondary hover:text-primary mt-4">Workshops</a>
-  <a href="#Facilitators" class="text-text-secondary hover:text-primary">Facilitators</a>
-  <a href="#Resources" class="text-text-secondary hover:text-primary">Resources</a>
-  <a href="#Success Stories" class="text-text-secondary hover:text-primary">Success Stories</a>
-  <a href="brochure.html" class="text-text-secondary hover:text-primary">Saturday Workshop Series</a>
-</div>
-
-
-  </div>
-</nav>
     
 <!-- Hero Section -->
 <section class="relative bg-gradient-to-br from-primary to-primary-light text-white overflow-hidden">
@@ -423,7 +418,7 @@
 </section>
 
 
-   <!-- Workshop Details -->
+<!-- Workshop Details -->
 <section class="py-20 bg-surface" id="workshops">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
@@ -435,7 +430,7 @@
       </p>
     </div>
 
-    <div class="grid lg:grid-cols-2 gap-12 items-start">
+    <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-12 items-start">
       <!-- Left Column -->
       <div>
         <div class="bg-white rounded-2xl p-8 shadow-card mb-6">
@@ -447,6 +442,7 @@
           </div>
 
           <div class="space-y-4 mb-8">
+            <!-- Topic 1 -->
             <div class="flex items-start">
               <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mr-3 mt-1">
                 <span class="text-white text-sm font-bold">1</span>
@@ -457,6 +453,7 @@
               </div>
             </div>
 
+            <!-- Topic 2 -->
             <div class="flex items-start">
               <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mr-3 mt-1">
                 <span class="text-white text-sm font-bold">2</span>
@@ -467,6 +464,7 @@
               </div>
             </div>
 
+            <!-- Topic 3 -->
             <div class="flex items-start">
               <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mr-3 mt-1">
                 <span class="text-white text-sm font-bold">3</span>
@@ -481,7 +479,8 @@
           <div class="bg-accent bg-opacity-10 rounded-lg p-4 mb-6">
             <div class="flex items-center justify-between">
               <span class="font-inter font-semibold">Application form:</span>
-              <a href="https://forms.gle/quQp6JJJvmf1FVhZA" target="_blank" class="text-accent font-inter font-bold underline">
+              <a href="https://forms.gle/quQp6JJJvmf1FVhZA" target="_blank"
+                 class="text-accent font-inter font-bold underline">
                 Fill out the form here
               </a>
             </div>
@@ -495,10 +494,11 @@
           <h3 class="text-2xl font-inter font-bold mb-6 text-center">Workshop Features</h3>
 
           <div class="space-y-6">
+            <!-- Feature 1 -->
             <div class="flex items-start">
               <div class="w-12 h-12 bg-success bg-opacity-10 rounded-lg flex items-center justify-center mr-4">
-                <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9 12l2 2 4-4m6 ..."/>
+                <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M5 10l4 4L15 7" />
                 </svg>
               </div>
               <div>
@@ -507,10 +507,11 @@
               </div>
             </div>
 
+            <!-- Feature 2 -->
             <div class="flex items-start">
               <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mr-4">
-                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M12 6.253v13m0-13..."/>
+                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 3h14v2H5zm0 4h14v2H5zm0 4h10v2H5zm0 4h14v2H5zm0 4h10v2H5z" />
                 </svg>
               </div>
               <div>
@@ -519,10 +520,11 @@
               </div>
             </div>
 
+            <!-- Feature 3 -->
             <div class="flex items-start">
               <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-lg flex items-center justify-center mr-4">
-                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M17.414 2.586 ..."/>
+                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
                 </svg>
               </div>
               <div>
@@ -531,10 +533,11 @@
               </div>
             </div>
 
+            <!-- Feature 4 -->
             <div class="flex items-start">
               <div class="w-12 h-12 bg-warning bg-opacity-10 rounded-lg flex items-center justify-center mr-4">
-                <svg class="w-6 h-6 text-warning" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M6 2a1 1 0 00-1 1v1..."/>
+                <svg class="w-6 h-6 text-warning" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M1 21h22L12 2 1 21zm12-3h-2v2h2v-2zm0-6h-2v4h2v-4z"/>
                 </svg>
               </div>
               <div>
@@ -544,24 +547,22 @@
                 </p>
               </div>
             </div>
+          </div>
 
-        <div class="w-full max-w-md mx-auto mt-6 px-4">
-  <a href="https://byhand.ai/workshop/gather" target="_blank"
-     class="block w-full bg-primary text-white font-semibold text-base text-center py-3 rounded shadow hover:bg-primary-dark transition">
-    Join the Workshop (Gather.town)
-  </a>
-</div>
-
-
+          <!-- CTA -->
+             <div class="w-full max-w-md mx-auto mt-6 px-4">
+            <a href="https://byhand.ai/workshop/gather" target="_blank"
+               class="block w-full bg-primary text-white font-semibold text-base text-center py-3 rounded shadow hover:bg-primary-dark transition">
+              Join the Workshop (Gather.town)
+            </a>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-</section>
+
 
 <!-- Latest Update Announcement -->
 <section class="py-12 bg-[#fff8f0] border-t border-border-default">
