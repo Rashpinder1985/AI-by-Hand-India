@@ -9,44 +9,61 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Faibyhand5591back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+
 </head>
 <body class="font-open-sans bg-background text-text-primary">
     <!-- Navigation Header -->
-    <nav class="bg-white shadow-sm border-b border-border-default sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
-                            <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-13-5z"/>
-                            <path d="M12 14l2 2 6-6" stroke="white" stroke-width="2" fill="none"/>
-                        </svg>
-                    </div>
-                    <div class="ml-3">
-                        <h1 class="text-xl font-inter font-bold text-primary">AI by Hand India</h1>
-                    </div>
-                </div>
-             <div class="block">
-    <div class="ml-0 md:ml-10 flex flex-col md:flex-row items-start md:items-baseline space-y-2 md:space-y-0 md:space-x-8">
-        <a href="#workshops" class="text-text-secondary hover:text-primary transition-smooth">Workshops</a>
-        <a href="#Facilitators" class="text-text-secondary hover:text-primary transition-smooth">Facilitators</a>
-        <a href="#Resources" class="text-text-secondary hover:text-primary transition-smooth">Resources</a>
-        <a href="#Success Stories" class="text-text-secondary hover:text-primary transition-smooth">Success Stories</a>
-        <a href="brochure.html" class="text-text-secondary hover:text-primary transition-smooth">Saturday Workshop Series</a>
-    </div>
-</div>
-
-                <div class="md:hidden">
-                    <button class="text-text-secondary hover:text-primary">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+ <!-- Navigation Header -->
+<nav class="bg-white shadow-sm border-b border-border-default sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      
+      <!-- Logo -->
+      <div class="flex items-center">
+        <div class="flex-shrink-0">
+          <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+            <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-13-5z"/>
+            <path d="M12 14l2 2 6-6" stroke="white" stroke-width="2" fill="none"/>
+          </svg>
         </div>
-    </nav>
+        <div class="ml-3">
+          <h1 class="text-xl font-inter font-bold text-primary">AI by Hand India</h1>
+        </div>
+      </div>
 
+      <!-- Desktop Menu -->
+      <div class="hidden md:block">
+        <div class="ml-10 flex items-baseline space-x-8">
+          <a href="#workshops" class="text-text-secondary hover:text-primary transition-smooth">Workshops</a>
+          <a href="#Facilitators" class="text-text-secondary hover:text-primary transition-smooth">Facilitators</a>
+          <a href="#Resources" class="text-text-secondary hover:text-primary transition-smooth">Resources</a>
+          <a href="#Success Stories" class="text-text-secondary hover:text-primary transition-smooth">Success Stories</a>
+          <a href="brochure.html" class="text-text-secondary hover:text-primary transition-smooth">Saturday Workshop Series</a>
+        </div>
+      </div>
+
+      <!-- Mobile Toggle Button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-toggle" class="text-text-secondary hover:text-primary">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="md:hidden hidden mt-2 space-y-2">
+      <a href="#workshops" class="block text-text-secondary hover:text-primary">Workshops</a>
+      <a href="#Facilitators" class="block text-text-secondary hover:text-primary">Facilitators</a>
+      <a href="#Resources" class="block text-text-secondary hover:text-primary">Resources</a>
+      <a href="#Success Stories" class="block text-text-secondary hover:text-primary">Success Stories</a>
+      <a href="brochure.html" class="block text-text-secondary hover:text-primary">Saturday Workshop Series</a>
+    </div>
+  </div>
+</nav>
+    
 <!-- Hero Section -->
 <section class="relative bg-gradient-to-br from-primary to-primary-light text-white overflow-hidden">
   <div class="absolute inset-0 bg-black opacity-10"></div>
@@ -287,68 +304,73 @@
     </section>
 
     
+<!-- Instructor Credibility -->
+<section class="py-20 bg-white" id="Facilitators">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl lg:text-4xl font-inter font-bold text-text-primary mb-6">
+        Facilitators
+      </h2>
+      <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+        World-class instruction combined with service and kindness for skilling people worldwide.
+      </p>
+    </div>
 
-    <!-- Instructor Credibility -->
-    <section class="py-20 bg-white" id="Facilitators">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl lg:text-4xl font-inter font-bold text-text-primary mb-6">
-                    Facilitators
-                </h2>
-                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
-                    World-class instruction combined with service and kindness for skilling people worldwide.
-                </p>
-            </div>
-            
-            <div class="grid lg:grid-cols-2 gap-12">
-                <!-- Prof. Tom Yeh -->
-                <div class="card-elevated">
-                    <div class="flex flex-col items-center text-center">
-                                        
-  <img
-  src="Tom.png"
-  alt="Prof. Tom Yeh"
-  class="w-32 h-32 rounded-full object-cover mb-6"
-  loading="lazy"
-  onerror="this.src='https://images.pexels.com/…'; this.onerror=null;"
-/>
-
-                    
-                        <h3 class="text-2xl font-inter font-bold mb-2">Prof. Tom Yeh</h3>
-                        
-                        <p class="text-text-secondary mb-6">
-                            Professor at University of Colorado Boulder with 15+ years of experience making complex AI concepts accessible. 
-                        <div class="grid grid-cols-2 gap-4 w-full text-center">
-                           
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Dr. Rashpinder Kaur -->
-                <div class="card-elevated">
-                    <div class="flex flex-col items-center text-center">
-                         <img
-  src="Rashpinder.png"
-  alt="Dr. Rashpinder Kaur"
-  class="w-32 h-32 rounded-full object-cover mb-6"
-  loading="lazy"
-  onerror="this.src='https://images.pexels.com/…'; this.onerror=null;"
-/>
-
-                        <h3 class="text-2xl font-inter font-bold mb-2">Dr. Rashpinder Kaur</h3>
-                        
-                        <p class="text-text-secondary mb-6">
-                            Collaborating with Prof.Tom Yeh and currently working as a teacher in weekly workshops on AI by hand.
-                        </p>
-                        <div class="grid grid-cols-2 gap-4 w-full text-center">
-
-                             
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Prof. Tom Yeh -->
+      <div class="card-elevated">
+        <div class="flex flex-col items-center text-center">
+          <img
+            src="Tom.png"
+            alt="Prof. Tom Yeh"
+            class="w-32 h-32 rounded-full object-cover mb-6"
+            loading="lazy"
+            onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg'; this.onerror=null;"
+          />
+          <h3 class="text-2xl font-inter font-bold mb-2">Prof. Tom Yeh</h3>
+          <p class="text-text-secondary mb-6">
+            Professor at University of Colorado Boulder with 15+ years of experience making complex AI concepts accessible.
+          </p>
         </div>
-    </section>
+      </div>
+
+      <!-- Dr. Rashpinder Kaur -->
+      <div class="card-elevated">
+        <div class="flex flex-col items-center text-center">
+          <img
+            src="Rashpinder.png"
+            alt="Dr. Rashpinder Kaur"
+            class="w-32 h-32 rounded-full object-cover mb-6"
+            loading="lazy"
+            onerror="this.src='https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg'; this.onerror=null;"
+          />
+          <h3 class="text-2xl font-inter font-bold mb-2">Dr. Rashpinder Kaur</h3>
+          <p class="text-text-secondary mb-6">
+            Collaborating with Prof. Tom Yeh and currently teaching weekly workshops on AI by Hand.
+          </p>
+        </div>
+      </div>
+
+      <!-- New Professor -->
+      <div class="card-elevated">
+        <div class="flex flex-col items-center text-center">
+          <img
+            src="NewProfessor.png"
+            alt="Dr. New Professor"
+            class="w-32 h-32 rounded-full object-cover mb-6"
+            loading="lazy"
+            onerror="this.src='https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg'; this.onerror=null;"
+          />
+          <h3 class="text-2xl font-inter font-bold mb-2">Dr. New Professor</h3>
+          <p class="text-text-secondary mb-6">
+            Expert in machine learning and pedagogy, focused on simplifying AI for diverse learners across India.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
    <!-- Workshop Details -->
 <section class="py-20 bg-surface" id="workshops">
@@ -622,6 +644,14 @@
 </footer>
            
     
+    <!-- JavaScript for toggling mobile menu -->
+<script>
+  const toggleBtn = document.getElementById('mobile-menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
 
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
    
 </body></html>
