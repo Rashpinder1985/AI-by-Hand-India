@@ -9,7 +9,7 @@
 <body class="font-open-sans bg-background text-text-primary">
 
   <!-- Workshop Details -->
-<section class="py-20 bg-surface" id="workshops.html">
+ <section class="py-20 bg-surface" id="workshops.html">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
       <h2 class="text-3xl lg:text-4xl font-inter font-bold text-text-primary mb-6">
@@ -20,11 +20,10 @@
       </p>
     </div>
 
-    <!-- Equal Height Columns -->
     <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
       <!-- Left Column -->
       <div class="flex flex-col h-full">
-        <div class="bg-white rounded-2xl p-8 shadow-card flex-grow flex flex-col">
+        <div class="bg-white rounded-2xl p-8 shadow-card flex flex-col h-full">
           <h3 class="text-2xl font-inter font-bold mb-6 text-center">Weekly Workshop</h3>
 
           <div class="text-center mb-6">
@@ -34,7 +33,37 @@
 
           <div class="space-y-4 mb-8">
             <!-- Topic 1 -->
-            <!-- ... same topics here ... -->
+            <div class="flex items-start">
+              <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mr-3 mt-1">
+                <span class="text-white text-sm font-bold">1</span>
+              </div>
+              <div>
+                <h4 class="font-inter font-semibold">Neural Network Basics</h4>
+                <p class="text-text-secondary text-sm">Draw your first neural network by hand</p>
+              </div>
+            </div>
+
+            <!-- Topic 2 -->
+            <div class="flex items-start">
+              <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mr-3 mt-1">
+                <span class="text-white text-sm font-bold">2</span>
+              </div>
+              <div>
+                <h4 class="font-inter font-semibold">Understanding Transformer by Hand and Excel</h4>
+                <p class="text-text-secondary text-sm">Calculate self‑attention step by step</p>
+              </div>
+            </div>
+
+            <!-- Topic 3 -->
+            <div class="flex items-start">
+              <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mr-3 mt-1">
+                <span class="text-white text-sm font-bold">3</span>
+              </div>
+              <div>
+                <h4 class="font-inter font-semibold">Agents</h4>
+                <p class="text-text-secondary text-sm">Understand the latest AI trends</p>
+              </div>
+            </div>
           </div>
 
           <div class="bg-accent bg-opacity-10 rounded-lg p-4 mt-auto">
@@ -51,16 +80,67 @@
 
       <!-- Right Column -->
       <div class="flex flex-col h-full">
-        <div class="bg-white rounded-2xl p-8 shadow-card flex-grow flex flex-col">
+        <div class="bg-white rounded-2xl p-8 shadow-card flex flex-col h-full">
           <h3 class="text-2xl font-inter font-bold mb-6 text-center">Workshop Features</h3>
 
-          <div class="space-y-6 flex-grow">
-            <!-- Feature 1–4 -->
-            <!-- ... same features here ... -->
+          <div class="space-y-6">
+            <!-- Feature 1 -->
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-success bg-opacity-10 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M5 10l4 4L15 7" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-inter font-semibold mb-2">Live Interactive Sessions</h4>
+                <p class="text-text-secondary">Real-time Q&A with Prof. Tom Yeh and his team</p>
+              </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 3h14v2H5zm0 4h14v2H5zm0 4h10v2H5zm0 4h14v2H5zm0 4h10v2H5z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-inter font-semibold mb-2">Hands‑on Workbooks</h4>
+                <p class="text-text-secondary">Step‑by‑step math exercises to do with pen and paper</p>
+              </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-inter font-semibold mb-2">Personalized Feedback</h4>
+                <p class="text-text-secondary">Get your hand‑drawn solutions reviewed during class</p>
+              </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-warning bg-opacity-10 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-warning" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M1 21h22L12 2 1 21zm12-3h-2v2h2v-2zm0-6h-2v4h2v-4z"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-inter font-semibold mb-2">Collaborative Virtual Space</h4>
+                <p class="text-text-secondary">
+                  Learn side‑by‑side in Gather.town with avatars at five rooftop tables—no Zoom isolation
+                </p>
+              </div>
+            </div>
           </div>
 
           <!-- CTA -->
-          <div class="w-full max-w-md mx-auto mt-6 px-4">
+          <div class="w-full max-w-md mx-auto mt-auto px-4">
             <a href="https://byhand.ai/workshop/gather" target="_blank"
               class="block w-full bg-primary text-white font-semibold text-base text-center py-3 rounded shadow hover:bg-primary-dark transition">
               Join the Workshop (Gather.town)
@@ -69,12 +149,10 @@
         </div>
       </div>
     </div>
-
-   
-    </div>
   </div>
 </section>
- <div class="mt-12 text-center">
+
+   <div class="mt-12 text-center">
     <a href="index.html"
        class="inline-block px-6 py-3 bg-primary text-white rounded-lg font-semibold shadow hover:bg-primary-dark transition">
       ⬅️ Back to Home
