@@ -187,18 +187,31 @@
     </div>
 
     <!-- Three Column Grid (Video + 2 Techniques) -->
-    <div class="grid md:grid-cols-3 gap-8 items-start">
-      <!-- Instagram Video Embed -->
-      <div class="rounded-xl overflow-hidden shadow-lg aspect-[4/5] w-full">
-        <iframe
-          src="Learning_Technique.mp4"
-          allowtransparency="true"
-          frameborder="0"
-          allowfullscreen
-          scrolling="no"
-          class="w-full h-full">
-        </iframe>
+  <div class="grid md:grid-cols-3 gap-8 items-start">
+  <!-- Video Embed with Custom Play Button -->
+  <div class="rounded-xl overflow-hidden shadow-lg aspect-[4/5] w-full relative" id="video-container">
+    <!-- Video Thumbnail -->
+    <img
+      src="video-thumbnail.jpg"
+      alt="Play AI by Hand video"
+      class="w-full h-full object-cover"
+      id="video-thumbnail"
+    />
+
+    <!-- Play Button Overlay -->
+    <button
+      class="absolute inset-0 flex items-center justify-center"
+      onclick="loadVideo()"
+      aria-label="Play video"
+    >
+      <div class="bg-black bg-opacity-50 rounded-full p-4 hover:scale-110 transition-transform">
+        <svg class="h-12 w-12 text-white" fill="currentColor" viewBox="0 0 84 84">
+          <circle cx="42" cy="42" r="42" fill="currentColor" opacity="0.6"/>
+          <polygon points="33,26 61,42 33,58" fill="white" />
+        </svg>
       </div>
+    </button>
+  </div>
 
       <!-- Technique 1: Feynman Technique -->
       <div class="bg-[#f3f4f6] p-6 rounded-lg shadow-md">
@@ -221,10 +234,6 @@
   </div>
 </section>
 
-
-
-
-    <section>
     <section class="py-20 bg-white" id="Success Stories">
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-3xl font-bold text-center mb-8">AI by Hand ✍️ Champions</h2>
@@ -686,7 +695,7 @@
 </section>
 
 
-
+<footer class="py-8 bg-white border-t border-gray-200">
   <div style="text-align: center; margin-top: 20px;">
     🧾 Copyright © 2025 AI by Hand India
   </div>
@@ -701,6 +710,15 @@
   toggleBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
   });
+    function loadVideo() {
+    const container = document.getElementById('video-container');
+    container.innerHTML = `
+      <video controls autoplay class="w-full h-full">
+        <source src="Learning_Technique.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    `;
+  }
 </script>
    
 </body></html>
