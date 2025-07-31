@@ -54,13 +54,14 @@
     </div>
 
     <!-- Mobile Menu (hidden by default) -->
-    <div id="mobile-menu" class="md:hidden hidden mt-2 space-y-2">
-      <a href="#workshops" class="block text-text-secondary hover:text-primary">Workshops</a>
-      <a href="#Facilitators" class="block text-text-secondary hover:text-primary">Facilitators</a>
-      <a href="#Resources" class="block text-text-secondary hover:text-primary">Resources</a>
-      <a href="#Success Stories" class="block text-text-secondary hover:text-primary">Success Stories</a>
-      <a href="brochure.html" class="block text-text-secondary hover:text-primary">Saturday Workshop Series</a>
-    </div>
+    <div id="mobile-menu" class="md:hidden hidden mt-2 flex flex-col space-y-2">
+  <a href="#workshops" class="text-text-secondary hover:text-primary">Workshops</a>
+  <a href="#Facilitators" class="text-text-secondary hover:text-primary">Facilitators</a>
+  <a href="#Resources" class="text-text-secondary hover:text-primary">Resources</a>
+  <a href="#Success Stories" class="text-text-secondary hover:text-primary">Success Stories</a>
+  <a href="brochure.html" class="text-text-secondary hover:text-primary">Saturday Workshop Series</a>
+</div>
+
   </div>
 </nav>
     
@@ -74,9 +75,10 @@
          AI by Hand ✍️ India
       </h1>
       <p class="text-xl lg:text-2xl font-open-sans mb-8 opacity-90">
-        Learn complex AI mathematics through the Feynman Technique. No intimidating equations,
+        Learn complex AI mathematics with colorful workbooks through the Feynman Technique and visual hooks. No intimidating equations,
         just clear understanding with weekly live workshops.
       </p>
+      
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a href="https://byhand.ai/workshop" target="_blank"
            class="btn-primary text-lg px-8 py-4 shadow-cta hover:shadow-cta-hover text-center">
@@ -167,14 +169,16 @@
 
     <!-- Visual Quote -->
     <div class="relative mb-20">
-      <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8">
-        <img
-          src="deepseek.png"
-          alt="Hand-drawn illustrations of AI math concepts used in teaching"
-          class="max-w-3xl h-96 object-cover rounded-2xl shadow-card mb-8 mx-auto"
-          loading="lazy"
-          onerror="this.src='https://images.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_1280.jpg'; this.onerror=null;"
-        />
+     <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8">
+  <img
+    src="deepseek.png"
+    alt="Hand-drawn illustrations of AI math concepts used in teaching"
+    class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg aspect-square object-cover rounded-2xl shadow-card mx-auto mb-8"
+    loading="lazy"
+    onerror="this.src='https://images.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_1280.jpg'; this.onerror=null;"
+  />
+</div>
+
         <div class="text-center max-w-2xl mx-auto">
           <p class="text-xl text-text-secondary max-w-3xl mx-auto mb-2">
             “3 years ago, I made a controversial decision in my AI course: I ditched all Jupyter notebooks 
@@ -187,9 +191,10 @@
     </div>
 
     <!-- Three Column Grid (Video + 2 Techniques) -->
-  <div class="grid md:grid-cols-3 gap-8 items-start">
+<!-- Three Column Grid (Video + 2 Techniques) -->
+<div class="grid md:grid-cols-3 gap-8 items-stretch">
   <!-- Video Embed with Custom Play Button -->
-  <div class="rounded-xl overflow-hidden shadow-lg aspect-[4/5] w-full relative" id="video-container">
+  <div class="rounded-xl overflow-hidden shadow-lg aspect-[4/5] w-full relative flex flex-col h-full bg-black" id="video-container">
     <!-- Video Thumbnail -->
     <img
       src="video-thumbnail.png"
@@ -198,39 +203,35 @@
       id="video-thumbnail"
     />
 
-    <!-- Play Button Overlay -->
+    <!-- Play Button Overlay with Image Icon -->
     <button
       class="absolute inset-0 flex items-center justify-center"
       onclick="loadVideo()"
       aria-label="Play video"
     >
-      <div class="bg-black bg-opacity-50 rounded-full p-4 hover:scale-110 transition-transform">
-        <svg class="h-12 w-12 text-white" fill="currentColor" viewBox="0 0 84 84">
-          <circle cx="42" cy="42" r="42" fill="currentColor" opacity="0.6"/>
-          <polygon points="33,26 61,42 33,58" fill="white" />
-        </svg>
-      </div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Video-play-icon.png" alt="Play" class="h-16 w-16" />
     </button>
   </div>
 
-      <!-- Technique 1: Feynman Technique -->
-      <div class="bg-[#f3f4f6] p-6 rounded-lg shadow-md">
-        <h3 class="text-2xl font-semibold text-primary mb-3">🧠 The Feynman Technique</h3>
-        <p class="text-text-secondary">
-          Prof. Yeh uses a variation of the <strong>Feynman technique</strong>—explaining AI concepts as if teaching a
-          <strong>5-year-old</strong>. The goal is mastery through <em>radical clarity and simplicity</em>, not academic jargon.
-        </p>
-      </div>
+  <!-- Technique 1: Feynman Technique -->
+  <div class="bg-[#f3f4f6] p-6 rounded-lg shadow-md flex flex-col h-full">
+    <h3 class="text-2xl font-semibold text-primary mb-3">🧠 The Feynman Technique</h3>
+    <p class="text-text-secondary">
+      Prof. Yeh uses a variation of the <strong>Feynman technique</strong>—explaining AI concepts as if teaching a
+      <strong>5-year-old</strong>. The goal is mastery through <em>radical clarity and simplicity</em>, not academic jargon.
+    </p>
+  </div>
 
-      <!-- Technique 2: Visual Memory Hooks -->
-      <div class="bg-[#fff8f0] p-6 rounded-lg shadow-md">
-        <h3 class="text-2xl font-semibold text-accent mb-3">🎨 Visual Memory Hooks</h3>
-        <p class="text-text-secondary">
-          Workbooks are illustrated with <strong>color-coded drawings</strong> that activate visual memory. Since the brain stores
-          <em>images more efficiently than text</em>, this method boosts retention and intuitive understanding.
-        </p>
-      </div>
-    </div>
+  <!-- Technique 2: Visual Memory Hooks -->
+  <div class="bg-[#fff8f0] p-6 rounded-lg shadow-md flex flex-col h-full">
+    <h3 class="text-2xl font-semibold text-accent mb-3">🎨 Visual Memory Hooks</h3>
+    <p class="text-text-secondary">
+      Workbooks are illustrated with <strong>color-coded drawings</strong> that activate visual memory. Since the brain stores
+      <em>images more efficiently than text</em>, this method boosts retention and intuitive understanding.
+    </p>
+  </div>
+</div>
+
   </div>
 </section>
 
